@@ -1,0 +1,131 @@
+/* navbar style is here */
+.navbar {
+    background-color: #A5A6F6 !important;
+    height: 105px;
+}
+
+.navbar-light .collapse {
+    justify-content: center;
+}
+
+/* active navbar style is here */
+.navbar-light .navbar-nav .nav-link.active {
+    color: #5D5FEF !important;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 34px;
+}
+
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .navbar-nav .nav-link {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 34px;
+    color: #E0E0E0;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+/* button style is here */
+.navbar-light .signup-button {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 25px;
+    width: 150px;
+    height: 46px;
+    border-radius: 4px;
+}
+
+.dropdown-toggle::after {
+    display: none !important;
+}
+
+/* services main title is here */
+.solutions-main {
+    min-height: 230px;
+    background-color: #A5A6F6 !important;
+}
+
+.solutions-main-title {
+    color: #FFF;
+    text-align: center;
+    font-size: 48px;
+    font-family: 'Open Sans';
+    font-weight: 700;
+    line-height: 72px;
+    letter-spacing: 0.96px;
+    align-self: center;
+    padding-top: 65px;
+}
+
+
+/* footer style is here */
+.page-footer {
+    background-color: #FFFFFF;
+    padding-top: 80px;
+    padding-bottom: 10px;
+}
+
+.footer-text {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 30px;
+    color: #A1A1A1;
+    margin-top: 35px;
+}
+
+.footer-title {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 21px;
+    line-height: 30px;
+    color: #21214C;
+}
+
+.footer-title::before {
+    content: '';
+    position: absolute;
+    margin-top: 35px;
+    background: #7879F1;
+    width: 42px;
+    height: 2px;
+}
+
+.footer-links {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 30px;
+    color: #A1A1A1 !important;
+    display: block;
+}
+
+.footer-links:hover {
+    text-decoration: underline !important;
+    cursor: pointer;
+}
+
+@media screen and (max-width:1000px) {
+    .navbar-light #search {
+        display: none;
+    }
+}
+@media screen and (max-width:600px) {
+    .solutions-main-title {
+        font-size: 30px;
+        line-height: 55px;
+        padding-top: 90px;
+    }
+}
+
+

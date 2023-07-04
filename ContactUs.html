@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
+    <link rel="stylesheet" href="contact.css">
+
+    <title>Contact Us</title>
+    <style>
+        /* question style is here */
+        .question-small-title {
+            color: var(--iris-60, #A5A6F6);
+            text-align: center;
+            font-size: 15px;
+            font-family: 'Open Sans';
+            line-height: 44px;
+            text-transform: uppercase;
+            opacity: 0.699999988079071;
+            margin-bottom: 3px !important;
+        }
+
+        .question-title {
+            color: #21214D;
+            text-align: center;
+            font-size: 40px;
+            font-family: 'Open Sans';
+            font-weight: 700;
+        }
+
+        .question-text {
+            color: #A1A1A1;
+            text-align: center;
+            font-size: 16px;
+            font-family: 'Open Sans';
+            line-height: 34px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        .question .list-group-item {
+            color: #A1A1A1;
+            font-size: 13px;
+            font-family: 'Open Sans';
+            line-height: 20px;
+            border: 1px solid #CBCBCC;
+            padding: 15px 10px 15px 20px;
+            margin-top: 15px;
+            border-radius: 3px;
+        }
+
+        .question .list-group-item.active {
+            background: rgba(93, 95, 239, 0.10) !important;
+            color: var(--iris-100, #5D5FEF) !important;
+            font-weight: 500;
+            border-left: 8px solid var(--iris-100, #5D5FEF);
+            padding-left: 13px;
+        }
+
+        /* question inner style is here */
+        .question-inner {
+            align-self: center;
+            padding-left: 40px;
+        }
+
+        .question-inner-title {
+            color: #21214D;
+            font-size: 24px;
+            font-family: 'Open Sans';
+            font-weight: 700;
+        }
+
+        .question-inner-text {
+            color: #A1A1A1;
+            font-size: 18px;
+            font-family: 'Open Sans';
+            line-height: 34px;
+        }
+        @media screen and (max-width:768px) {
+            .question-inner{
+                margin-top: 30px;
+            }
+            .question{
+                padding-right: 10px;
+            }
+        }
+        @media screen and (max-width:470px) {
+            .question-title {
+                font-size: 30px;
+            }
+
+            .question-text {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- navbar is here -->
+    <nav class="navbar navbar-expand-lg navbar-light ">
+        <div class="container">
+            <img src="images/Logo.png" alt="Girl in a jacket" width="px" height="px" class="navbar-img">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="Home.html">Homepage <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            Services
+                            <i class="fa fa-chevron-down fa-xs"></i>
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="staff.html">Sponsorship</a>
+                            <a class="dropdown-item" href="Staff2.html">Immigration Services</a>
+                            <a class="dropdown-item" href="Staff3.html">Staffing Solutions</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="Blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="AboutUs.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="ContactUs.html">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="form-inline my-2 my-lg-0" id="search">
+                <button class="btn btn-outline-light my-2 my-sm-0 signup-button" type="submit">Search</button>
+            </div>
+        </div>
+    </nav>
+    <!-- contact us main section -->
+    <section class="contact-main">
+        <div class="container">
+            <h1 class="contact-main-title">Contact Us</h1>
+        </div>
+    </section>
+
+    <!-- form section is here -->
+    <section class="form-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-12">
+                    <p class="form-small-title">Get in touch</p>
+                    <h1 class="form-title">Have any question ?</h1>
+                    <p class="form-text">Contact us today to start a conversation about your staffing needs.</p>
+                    <h4 class="form-inner-title mt-5"><img src="images/bx_bxs-phone.png" alt="user"
+                            class="form-inner-img">(021) 8912830</h4>
+                    <p class="form-inner-text">To speak with a member of our team, give us a call at the above no.</p>
+                    <h4 class="form-inner-title mt-4"><img src="images/ic_baseline-email.png" alt="user"
+                            class="form-inner-img">hello@dreative.com
+                    </h4>
+                    <p class="form-inner-text">For email inquiries, reach out to us at the provided mail</p>
+                </div>
+                <!-- form is here -->
+                <div class="col-lg-8 col-md-12 pr-0 big-col">
+                    <form class="form-style ">
+                        <div class="row">
+                            <div class="col pr-0 ">
+                                <input type="text" class="form-control" placeholder="Abdul">
+                            </div>
+                            <div class="col">
+                                <input type="text" class="form-control" placeholder="Email">
+                            </div>
+                        </div>
+                        <div class="row mt-2">
+                            <div class="col pr-0">
+                                <input type="password" class="form-control" placeholder="Phone Number">
+                            </div>
+                            <div class="col">
+                                <input type="text" class="form-control" placeholder="Subject">
+                            </div>
+                        </div>
+                        <textarea class="form-control" rows="9" placeholder="Message"
+                            style="margin-top: 19px;"></textarea>
+                        <button class="btn form-button" type="button">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- office section is here -->
+    <section class="office">
+        <div class="container">
+            <div class="row mt-5" style="padding-top: 70px; padding-bottom: 70px;">
+                <div class="col-lg-6 col-md-12">
+                    <img src="images/Office.png" alt="user" style="position: absolute; width: 90%;" class="office-img">
+                    <img src="images/Office blue img.png" alt="user"
+                        style="margin-top: 50px; width: 93%; margin-left: -45px;" class="d-none d-sm-flex">
+                </div>
+                <div class="col-lg-6 col-md-12" style="align-self: center;">
+                    <h1 class="office-title">Our office</h1>
+                    <p class="office-text">Visit our modern and welcoming office space, conveniently located for easy
+                        access.</p>
+                    <!-- office inner is here -->
+                    <h4 class="office-title-inner mt-5"><img src="images/ic_baseline-location-on.png" alt="user"
+                            class="office-img-inner">123 Main Street, City, State, Zip Code</h4>
+                    <p class="office-text-inner">our gateway to exceptional staffing solutions.</p>
+                    <h4 class="office-title-inner"><img src="images/mdi_clock-time-eight.png" alt="user"
+                            class="office-img-inner">09 : 00 AM - 06 : 00 PM</h4>
+                    <p class="office-text-inner"> We are open from Monday to Friday, 9:00 AM to 6:00 PM, to serve you
+                        better.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- question section is here -->
+    <section class="question mt-5">
+        <div class="container">
+            <p class="question-small-title">Frequently Asked Questions (FAQs)</p>
+            <h1 class="question-title">Commonly Asked Questions About our Staffing Solutions</h1>
+            <p class="question-text mt-3">Here are answers to some of the most frequently asked questions about our
+                staffing
+                solutions. If you have any other questions or need further clarification, please don't hesitate to reach
+                out to our team. We are here to assist you in making informed decisions and providing you with the
+                information you need to confidently choose our services.</p>
+            <div class="row mt-4">
+                <div class="col-md-4 pr-0">
+                    <ul class="list-group">
+                        <li class="list-group-item active" id="listOne">How do you source candidates for staffing
+                            solutions?</li>
+                        <li class="list-group-item " id="listTwo">What industries do you specialize in for staffing
+                            solutions?</li>
+                        <li class="list-group-item" id="listThree">How do you ensure the quality of candidates for
+                            placement?</li>
+                        <li class="list-group-item" id="listFour">Do you offer temporary staffing solutions or only
+                            permanent placements?</li>
+                        <li class="list-group-item" id="listFive">What post-placement support do you provide?</li>
+                    </ul>
+                </div>
+                <div class="col-md-8 question-inner">
+                    <h1 class="question-inner-title" id="title">How do you source candidates for staffing solutions?
+                    </h1>
+                    <p class="question-inner-text">We utilize a multi-faceted approach to source candidates, including
+                        targeted job
+                        postings, proactive candidate search, referrals, and partnerships with industry networks. This
+                        ensures access to a pool of qualified talent.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- interested section start from here -->
+    <section class="interested mt-5">
+        <div class="container">
+            <img src="images/interested nok.png" alt="user"
+                style="position: absolute; margin-left: -35px; margin-top: -25px; z-index: 999999;">
+            <img src="images/interested dots.png" alt="user" class="d-none d-xl-flex"
+                style="margin-left: 953px; margin-top: 117px; position: absolute;">
+            <div class="row interested-inner">
+                <div class="col-md-6">
+                    <h1 class="interested-inner-title">Interested to collaborate ?</h1>
+                    <p class="interested-inner-text">Unlock the power of collaboration with Lotus Hiring, where ideas
+                        converge, and possibilities expand.</p>
+                </div>
+                <div class="col-md-6">
+                    <button class="btn interested-inner-button" type="button">Let’s Talk</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer start from here -->
+    <footer class="page-footer blue">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-8 col-sm-8">
+                    <img src="images/LOGO (1).png" alt="user" style="width: 120px;">
+                    <p class="footer-text">Your trusted partner for staffing solutions and immigration services - Lotus
+                        Hiring is committed to delivering excellence and driving success for businesses and individuals
+                        alike.</p>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-4">
+                    <h4 class="footer-title">Menu</h4>
+                    <a class="footer-links mt-4">Home</a>
+                    <a class="footer-links">Staffing Solutions</a>
+                    <a class="footer-links">Immigration Services </a>
+                    <a class="footer-links">Blogs</a>
+                    <a class="footer-links">About Us</a>
+                    <a class="footer-links">Contact Us</a>
+                </div>
+                <div class="col-lg-3 col-md-8 col-sm-8">
+                    <h4 class="footer-title">Services</h4>
+                    <a class="footer-links mt-4">000 0000 0000</a>
+                    <a class="footer-links">info@mail.com</a>
+                    <a class="footer-links">City, Postal Code, State,</a>
+                    <a class="footer-links">Country</a>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-4">
+                    <h4 class="footer-title">Follow Us</h4>
+                    <a class="footer-links mt-4">Facebook</a>
+                    <a class="footer-links">Instagram</a>
+                    <a class="footer-links">Twitter</a>
+                    <a class="footer-links">YouTube</a>
+                    <a class="footer-links">Linkedin</a>
+                </div>
+            </div>
+            <hr class="mt-4">
+            <!-- Copyright -->
+            <div class="footer-copyright text-center py-3" style="font-family: 'Open Sans';color: #A1A1A1;">
+                © Copyright Lotus Hiring 2023, All right reserved.</div>
+        </div>
+    </footer>
+
+    <!-- botstrap cdn -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
