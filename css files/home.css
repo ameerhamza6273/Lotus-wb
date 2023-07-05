@@ -1,7 +1,7 @@
 /* navbar style is here */
 .navbar {
     background-color: #A5A6F6 !important;
-    height: 105px;
+    min-height: 105px;
 }
 
 .navbar-light .collapse {
@@ -9,13 +9,33 @@
 }
 
 /* active navbar style is here */
-.navbar-light .navbar-nav .active>.nav-link{
+.navbar-light .navbar-nav .active>.nav-link {
     color: #5D5FEF !important;
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 600;
     font-size: 16px;
     line-height: 34px;
+}
+
+.navbar-light .navbar-nav .show>.nav-link {
+    color: #E0E0E0 !important;
+}
+
+.navbar-expand-lg .navbar-nav .dropdown-menu {
+    border: 1px solid #ffffff5e;
+    background: #a5a6f6;
+    padding: 0;
+}
+
+.navbar-expand-lg .navbar-nav .dropdown-menu .dropdown-item {
+    color: #E0E0E0;
+    padding: 3px 10px
+}
+
+.navbar-expand-lg .navbar-nav .dropdown-menu .dropdown-item:hover {
+    background: #a5a6f6;
+    color: #5D5FEF !important;
 }
 
 .navbar-light .navbar-nav .nav-link:hover,
@@ -29,6 +49,7 @@
     text-decoration: none;
     margin-right: 20px;
 }
+
 .dropdown-toggle::after {
     display: none !important;
 }
@@ -43,12 +64,6 @@
     width: 150px;
     height: 46px;
     border-radius: 4px;
-}
-
-@media screen and (max-width:1000px) {
-    .navbar-light #search {
-        display: none;
-    }
 }
 
 /* main div style is here */
@@ -126,63 +141,6 @@
     height: 515px;
     margin-left: 40px;
     position: inherit;
-}
-
-@media screen and (max-width:1200px) {
-    .main-title {
-        font-size: 30px;
-        line-height: 40px;
-    }
-}
-
-@media screen and (max-width:992px) {
-    #image-col {
-        margin-top: 50px;
-    }
-
-    .cards-row {
-        margin-top: 50px;
-    }
-}
-
-@media screen and (max-width:575px) {
-    .main-image {
-        margin-left: 0;
-        width: 500px;
-        height: 100%;
-    }
-
-    .cards-row {
-        margin-top: 30px;
-    }
-}
-
-@media screen and (max-width:515px) {
-    .main-image {
-        margin-left: 0;
-        width: 400px;
-        height: 100%;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-    }
-}
-
-@media screen and (max-width:415px) {
-    .main-image {
-        margin-left: 0;
-        width: 310px;
-        height: 100%;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-    }
-}
-
-@media screen and (max-width:375px) {
-    .main-subtitle {
-        margin-top: 20px;
-    }
 }
 
 /* our way style is here */
@@ -299,24 +257,6 @@
     margin: 0 auto;
 }
 
-@media screen and (max-width:992px) {
-    .top-image-left {
-        display: none;
-    }
-
-    .top-image-right {
-        display: none;
-    }
-
-    .our-way-inner {
-        margin-top: 115px !important;
-    }
-
-    .our-way-inner #center-card {
-        margin-top: -95px !important;
-    }
-}
-
 /* employee style is here */
 .employee {
     margin-top: 50px;
@@ -383,22 +323,6 @@
     color: #9B9B9B;
     opacity: 0.7;
     text-align: center;
-}
-
-@media screen and (max-width:1200px) {
-    .employee-main-image {
-        margin-right: 22px !important;
-        margin-top: -40px !important;
-        width: 100% !important;
-        height: 80% !important;
-    }
-}
-
-@media screen and (max-width:600px) {
-    .employee-image {
-        padding-right: 0;
-        margin-left: 10px;
-    }
 }
 
 /* staff style start from here  */
@@ -488,43 +412,6 @@
     color: #5D5FEF;
 }
 
-@media screen and (max-width:1200px) {
-    .staff-dots {
-        margin-left: 200px !important;
-    }
-}
-
-@media screen and (max-width:992px) {
-    .staff-dots {
-        margin-left: 240px !important;
-    }
-}
-
-@media screen and (max-width:768px) {
-    .colorfull-card {
-        margin-top: 20px !important;
-    }
-}
-
-@media screen and (max-width:576px) {
-    .staff-blue-text {
-        text-align: center;
-    }
-
-    .staff-button {
-        margin: 0 auto;
-        display: block;
-    }
-
-    .staff-title {
-        text-align: center;
-    }
-
-    .staff-text {
-        text-align: center;
-    }
-}
-
 /* chooce Lotus style start from here*/
 .chooce-lotus {
     margin-top: 70px;
@@ -576,68 +463,6 @@
     padding: 3px 50px;
 }
 
-@media screen and (max-width:1200px) {
-    .choce-1 {
-        width: 100%;
-        margin-left: 0px !important;
-    }
-}
-
-@media screen and (max-width:992px) {
-    .choce-2 {
-        width: 85%;
-    }
-
-    .choce-3 {
-        width: 100%;
-    }
-}
-
-@media screen and (max-width:576px) {
-    .choce-1 {
-        width: 80%;
-        margin-right: auto !important;
-        margin-left: auto !important;
-        display: block;
-    }
-
-    .choce-2 {
-        width: 60%;
-        position: inherit !important;
-        margin-top: 15px !important;
-        margin: 0 auto;
-        display: block;
-    }
-
-    .choce-3 {
-        width: 80%;
-        float: unset !important;
-        margin: 0 auto;
-        display: block;
-    }
-
-    .choce-4 {
-        width: 40%;
-        margin-top: 15px !important;
-        margin: 0 auto;
-        display: block;
-    }
-
-    .chooce-lotus-button {
-        margin: 0 auto;
-        display: block;
-    }
-
-    .chooce-lotus-blue-text {
-        margin-top: 20px;
-        text-align: center;
-    }
-
-    .choce-nok {
-        margin-left: 5% !important;
-        margin-top: -20px !important;
-    }
-}
 
 /* creative person style start from here*/
 .creative-person {
@@ -735,12 +560,6 @@
 
 .creative-person .card .card-links .center {
     margin: 0 17px;
-}
-
-@media screen and (max-width:600px) {
-    .creative-person {
-        padding: 40px 15px;
-    }
 }
 
 /* testimonial style start from here */
@@ -843,24 +662,7 @@
     width: 80%;
     padding: 8px 10px;
     background-color: rgb(255 254 254 / 44%);
-}
-
-@media screen and (max-width:770px) {
-    .swiper-next {
-        position: absolute;
-        right: 5px;
-        top: 10px;
-    }
-
-    .swiper-prev {
-        position: absolute;
-        right: 70px;
-        top: 10px;
-    }
-
-    .testimonial {
-        padding: 15px;
-    }
+    transform: rotate(180deg);
 }
 
 /* interested style start from here */
@@ -911,24 +713,6 @@
     float: right;
 }
 
-@media screen and (max-width:600px) {
-    .interested {
-        padding: 35px;
-    }
-
-    .interested-inner {
-        padding: 40px 20px 40px 20px;
-    }
-}
-
-@media screen and (max-width:360px) {
-    .interested-inner-title {
-        font-weight: 600;
-        font-size: 27px;
-        line-height: 40px;
-    }
-}
-
 /* footer style is here */
 .page-footer {
     background-color: #FFFFFF;
@@ -977,4 +761,255 @@
 .footer-links:hover {
     text-decoration: underline !important;
     cursor: pointer;
+}
+
+/* media queries is here */
+@media screen and (min-width:1340px) {
+    .employee-line-img {
+        display: flex !important;
+    }
+}
+
+@media screen and (max-width:1200px) {
+    .main-title {
+        font-size: 30px;
+        line-height: 40px;
+    }
+
+    .choce-1 {
+        width: 100%;
+        margin-left: 0px !important;
+    }
+
+    .staff-dots {
+        margin-left: 200px !important;
+    }
+
+    .employee-main-image {
+        margin-right: 22px !important;
+        margin-top: -40px !important;
+        width: 100% !important;
+        height: 80% !important;
+    }
+}
+
+@media screen and (max-width:1000px) {
+    .navbar-light #search {
+        display: none;
+    }
+
+    .navbar {
+        padding-top: 20px;
+        border-bottom: 1px solid #bbbcf8;
+    }
+
+    .main-subtitle {
+        margin-top: 20px !important;
+    }
+}
+
+@media screen and (max-width:992px) {
+    #image-col {
+        margin-top: 50px;
+    }
+
+    .cards-row {
+        margin-top: 50px;
+    }
+
+    .choce-2 {
+        width: 85%;
+    }
+
+    .choce-3 {
+        width: 100%;
+    }
+
+    .staff-dots {
+        margin-left: 240px !important;
+    }
+
+    .top-image-left {
+        display: none;
+    }
+
+    .top-image-right {
+        display: none;
+    }
+
+    .our-way-inner {
+        margin-top: 115px !important;
+    }
+
+    .our-way-inner #center-card {
+        margin-top: -95px !important;
+    }
+}
+
+@media screen and (max-width:770px) {
+    .swiper-next {
+        position: absolute;
+        right: 5px;
+        top: 10px;
+    }
+
+    .swiper-prev {
+        position: absolute;
+        right: 70px;
+        top: 10px;
+    }
+
+    .testimonial {
+        padding: 15px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .colorfull-card {
+        margin-top: 20px !important;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .creative-person {
+        padding: 40px 15px;
+    }
+
+    .interested {
+        padding: 35px;
+    }
+
+    .interested-inner {
+        padding: 40px 20px 40px 20px;
+    }
+
+    .employee-image {
+        padding-right: 0;
+        margin-left: 10px;
+    }
+}
+
+@media screen and (max-width:576px) {
+    .main-button {
+        padding: 0 15px;
+    }
+    .choce-1 {
+        width: 80%;
+        margin-right: auto !important;
+        margin-left: auto !important;
+        display: block;
+    }
+
+    .choce-2 {
+        width: 60%;
+        position: inherit !important;
+        margin-top: 15px !important;
+        margin: 0 auto;
+        display: block;
+    }
+
+    .choce-3 {
+        width: 80%;
+        float: unset !important;
+        margin: 0 auto;
+        display: block;
+    }
+
+    .choce-4 {
+        width: 40%;
+        margin-top: 15px !important;
+        margin: 0 auto;
+        display: block;
+    }
+
+    .chooce-lotus-button {
+        margin: 0 auto;
+        display: block;
+    }
+
+    .chooce-lotus-blue-text {
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .choce-nok {
+        margin-left: 5% !important;
+        margin-top: -20px !important;
+    }
+
+    .staff-blue-text {
+        text-align: center;
+    }
+
+    .staff-button {
+        margin: 0 auto;
+        display: block;
+    }
+
+    .staff-title {
+        text-align: center;
+    }
+
+    .staff-text {
+        text-align: center;
+    }
+    .footer-title {
+        margin-top: 15px;
+    }
+}
+
+@media screen and (max-width:575px) {
+    .main-image {
+        margin-left: 0;
+        width: 500px;
+        height: 100%;
+    }
+
+    .cards-row {
+        margin-top: 30px;
+    }
+}
+
+@media screen and (max-width:515px) {
+    .main-image {
+        margin-left: 0;
+        width: 400px;
+        height: 100%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media screen and (max-width:415px) {
+    .main-image {
+        margin-left: 0;
+        width: 310px;
+        height: 100%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #discover-btn{
+        margin-right: 2px !important;
+    }
+    .main-button {
+        padding: 0 5px;
+        height: 38px;
+        line-height: 30px;
+    }
+}
+
+@media screen and (max-width:375px) {
+    .main-subtitle {
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width:360px) {
+    .interested-inner-title {
+        font-weight: 600;
+        font-size: 27px;
+        line-height: 40px;
+    }
 }
