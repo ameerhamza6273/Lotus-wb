@@ -18,10 +18,27 @@
     line-height: 34px;
 }
 
+.navbar-light .navbar-nav .nav-link.active::before {
+    position: absolute;
+    content: url(../images/Ellipse\ 161.png);
+    margin-top: 22px;
+    margin-left: 35px;
+}
+
 .navbar-expand-lg .navbar-nav .dropdown-menu {
     border: 1px solid #ffffff5e;
     background: #a5a6f6;
     padding: 0;
+    margin-top: -2px;
+    max-width: 180px;
+}
+
+.dropdown-item.active,
+.dropdown-item:active {
+    color: #5D5FEF !important;
+    text-decoration: none;
+    background-color: #a5a6f6;
+    font-weight: 600;
 }
 
 .navbar-expand-lg .navbar-nav .dropdown-menu .dropdown-item {
@@ -412,6 +429,9 @@
 }
 
 @media screen and (max-width:992px) {
+    .navbar-light .navbar-nav .nav-link.active::before{
+        display: none;
+    }
     .opportunity-content {
         padding-left: 0;
         max-width: fit-content;
@@ -473,6 +493,7 @@
         margin-top: 15px;
     }
 }
+
 @media screen and (max-width:600px) {
     .solutions-main-title {
         font-size: 30px;
