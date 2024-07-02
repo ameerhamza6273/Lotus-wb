@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
+    <link rel="stylesheet" href="css files/style.css">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <!-- <script src="home.js"></script> -->
+    <title>Lotus</title>
+</head>
+
+<body>
+    <!-- navbar is here -->
+    <nav class="navbar navbar-expand-lg navbar-light ">
+        <div class="container">
+            <img src="images/Logo (2).jpg" alt="Girl in a jacket" width="px"  class="navbar-img">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            Services
+                            <i class="fa fa-chevron-down fa-xs"></i>
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="sponsorship.html">Sponsorship</a>
+                            <a class="dropdown-item" href="immigration-services.html">Immigration Services</a>
+                            <a class="dropdown-item" href="staffing-solution.html">Staffing Solutions</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about-us.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact-us.html">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="form-inline my-2 my-lg-0" id="search">
+                <button class="btn my-2 my-sm-0 signup-button" type="submit">Search</button>
+            </div>
+        </div>
+    </nav>
+    <!-- main div is here -->
+    <div class="main-home">
+        <div class="container">
+            <div class="row ">
+                <div class="col">
+                    <p class="main-subtitle">Unlocking Talent and Opportunity</p>
+                    <h1 class="main-title-home">Your Gateway to Skilled Professionals and Immigration Solutions</h1>
+                    <p class="main-text">Unlock talent and streamline immigration with connect immigrate. We connect US
+                        employers with skilled
+                        professionals and provide expert guidance for employment-based immigration.</p>
+                    <button class="btn btn-warning my-2 my-sm-0 main-button" id="discover-btn" type="submit">Discover
+                        Talent</button>
+                    <button class="btn my-2 my-sm-0 main-button" id="assist-btn" type="submit">Immigration
+                        Assistance</button>
+                </div>
+                <div class="col" style="max-height: 515px;" id="image-col">
+                    <img src="images/round.png" alt="user"
+                        style="z-index: 999;  position: absolute; left: -22px; top: -20px;" class="d-sm-flex d-none">
+                    <img src="images/Vector 15 ylw.png" alt="user" style="z-index: 999;  position: absolute;"
+                        class="d-none d-sm-flex">
+                    <img src="images/dots.png" alt="user" style=" position: absolute;     margin-left: 391px;"
+                        class="d-none d-sm-flex">
+                    <img src="images/lines.png" alt="user" style=" position: absolute; bottom: 14px;"
+                        class="d-none d-sm-flex">
+                    <img src="images/Rectangle 3.png" alt="user"
+                        style="position: absolute; width: 400px; height: 445px; margin-left: 139px;bottom: -10px;"
+                        class="d-none d-sm-flex">
+                    <img src="images/Rectangle 2.png" alt="user" class="main-image">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- our way section start from here -->
+    <section style="background-color: #887cd9;">
+        <div class="container">
+            <div class="our-way">
+                <p class="our-way-small-title">our way</p>
+                <h1 class="our-way-title">How we works ?</h1>
+                <p class="our-way-text">We listen to your needs, connect you with the right talent or guide you through
+                    immigration, and ensure your success. Our streamlined process simplifies staffing or immigration,
+                    empowering
+                    you to achieve your goals efficiently.</p>
+            </div>
+            <div class="our-way-inner">
+                <div class="row justify-content-around">
+                    <div class="card" style="width:280px">
+                        <img class="card-img-top" src="images/graph.png" alt="Card image">
+                        <div class="card-body">
+                            <h4 class="card-title">Discover</h4>
+                            <p class="card-text">Tell us about your staffing needs or immigration requirements. We'll
+                                take
+                                the time to understand your unique situation and goals.</p>
+                        </div>
+                        <span class="card-line"></span>
+                    </div>
+                    <div class="card" style="width:280px" id="center-card">
+                        <img class="card-img-top" src="images/hierarchy-3.png" alt="Card image">
+                        <div class="card-body">
+                            <h4 class="card-title">Connect</h4>
+                            <p class="card-text">Our team of experts will leverage our extensive network and resources
+                                to
+                                find the right talent or guide you through the immigration process.</p>
+                        </div>
+                        <span class="card-line"></span>
+                        <img src="images/Blue line.png" alt="alt" style="position: absolute; top: 265px; left: -62px;"
+                            class="d-none d-lg-flex ">
+                    </div>
+                    <div class="card" style="width:280px">
+                        <img class="card-img-top" src="images/cup.png" alt="Card image">
+                        <div class="card-body">
+                            <h4 class="card-title">Success</h4>
+                            <p class="card-text">With our support, you'll gain access to skilled professionals or
+                                navigate
+                                immigration smoothly, ensuring your business can thrive and achieve success.</p>
+                        </div>
+                        <span class="card-line"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Employee div is here -->
+    <section class="employee" style="margin: 0;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-12 employee-image">
+                    <img src="images/Vector 16 ylw.png" alt="user"
+                        style="float: right; z-index: 999;  position: inherit;">
+                    <img src="images/Rectangle 22.png" alt="user" style="position: absolute; width: 490px;
+                        height: 350px; margin-left: -21px; top: 65px;" class="d-none d-xl-flex">
+                    <img src="images/Employee.png" alt="user" width="500px" style="float: right;margin-top: 20px; z-index: 99;
+                    margin-right: -38px; position: inherit;" class="employee-main-image">
+                    <img src="images/wt dot.png" alt="user"
+                        style="position: absolute; margin-top: 275px; margin-left: -42px;" class="d-none d-xl-flex">
+                </div>
+                <div class="col-lg-6 col-md-12 employee-content">
+                    <p class="employee-content-small-text">Your Trusted Staffing and Immigration Partner</p>
+                    <h1 class="employee-content-title">Empowering Employers and Facilitating Global Opportunities</h1>
+                    <p class="employee-content-text">Your trusted partner for staffing and immigration services. We
+                        connect
+                        employers with talent and navigate immigration processes, ensuring success and satisfaction.</p>
+                    <div class="employee-content-inner">
+                        <div>
+                            <h1 class="employee-content-inner-title">500+</h1>
+                            <p class="employee-content-inner-text">Employers Served</p>
+                        </div>
+                        <div>
+                            <h1 class="employee-content-inner-title">10+</h1>
+                            <p class="employee-content-inner-text">Years of Experience</p>
+                        </div>
+                        <div>
+                            <h1 class="employee-content-inner-title">1000+</h1>
+                            <p class="employee-content-inner-text">Successful Immigration Cases</p>
+                        </div>
+                    </div>
+                    <img src="images/Color line.png" alt="user" style="float: right; margin-right: -118px; 
+                    margin-top: -84px;" class="d-none employee-line-img">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- staff section start from here -->
+    <section style="background-color: #887cd9;">
+        <div class="container">
+            <div class="row staff">
+                <div class="col-lg-4 col-md-12" style="align-self: center;">
+                    <p class="staff-blue-text">Our Services</p>
+                    <h1 class="staff-title">Staffing & Immigration Solutions</h1>
+                    <p class="staff-text">connect immigrate provides integrated staffing and immigration solutions,
+                        simplifying
+                        the
+                        hiring process and facilitating smooth immigration journeys. With expertise in global
+                        recruitment
+                        and
+                        immigration compliance, we empower employers to build diverse teams and navigate the
+                        complexities of
+                        managing a global workforce.</p>
+                    <button class="btn staff-button" type="button">Learn More</button>
+                </div>
+                <div class="col-lg-8 col-md-12">
+                    <div class="row cards-row">
+                        <div class="col-md-6 mt-5 staff-inner">
+                            <div class="card">
+                                <img class="card-img-top" src="images/Group 42 nw.png" alt="Card image">
+                                <div class="card-body">
+                                    <h4 class="card-title">Staffing Solutions</h4>
+                                    <p class="card-text"> From candidate sourcing to recruitment, we streamline the
+                                        hiring
+                                        process to find the perfect talent for your organization.</p>
+                                    <span class="card-link mr-1">Read more</span><img src="images/Arrow 1.png"
+                                        alt="user">
+                                </div>
+                            </div>
+                            <div class="card mt-4">
+                                <img class="card-img-top" src="images/Group 42 nw.png" alt="Card image">
+                                <div class="card-body">
+                                    <h4 class="card-title">US Employment-Based Immigration</h4>
+                                    <p class="card-text"> We guide employers through visa sponsorship processes and
+                                        ensure
+                                        compliance across various visa categories, including H-1B and L-1.</p>
+                                    <span class="card-link mr-1">Read more</span><img src="images/Arrow 1.png"
+                                        alt="user">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 staff-inner">
+                            <img src="images/Blue long dots.png" alt="user" class="staff-dots d-none d-md-flex"
+                                style="position: absolute; margin-left: 260px; top: -27px; filter: brightness(1.5);">
+                            <div class="card colorfull-card">
+                                <img class="card-img-top" src="images/Group 41 nw.png" alt="Card image"
+                                    style="filter: hue-rotate(348deg) !important;">
+                                <div class="card-body">
+                                    <h4 class="card-title">US Employment-Based Immigration</h4>
+                                    <p class="card-text"> We guide employers through visa sponsorship
+                                        processes and ensure
+                                        compliance across various visa categories, including H-1B and L-1.</p>
+                                    <span class="card-link mr-1">Read more</span>
+                                    <img src="images/Arrow 1.png" alt="">
+                                </div>
+                            </div>
+                            <div class="card mt-4" color="red">
+                                <img class="card-img-top" src="images/Group 43 nw.png" alt="Card image">
+                                <div class="card-body">
+                                    <h4 class="card-title">US Employment-Based Immigration</h4>
+                                    <p class="card-text"> We guide employers through visa sponsorship processes and
+                                        ensure
+                                        compliance across various visa categories, including H-1B and L-1.</p>
+                                    <span class="card-link mr-1">Read more</span><img src="images/Arrow 1.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- chooce Lotus div start from here-->
+    <div class=" chooce-lotus">
+        <div class="container">
+            <div class="row ">
+                <div class="col-lg-7 col-md-12">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <img src="images/Vector 17 ylw.png" alt="user" class="choce-nok"
+                                style="position: absolute; margin-left: -38px; margin-top: -29px;">
+                            <img src="images/Chooce 1.png" alt="user" style=" margin-left: -10px;" class="choce-1">
+                        </div>
+                        <div class="col-sm-6 ">
+                            <img src="images/Blue long dots.png" alt="user"
+                                style="float: right; margin-top: 48px; margin-right: 21px;filter: brightness(1.3);"
+                                class="d-none d-xl-flex">
+                            <img src="images/Chooce 2.png" alt="user" style="position: absolute; bottom: 0;"
+                                class="choce-2">
+                        </div>
+                    </div>
+                    <div class="row mt-4">
+                        <div class="col-sm-6 pr-2  image-col">
+                            <img src="images/Chooce 3.png" alt="user" style="float: right;" class="choce-3">
+                        </div>
+                        <div class="col-sm-6  image-col">
+                            <img src="images/Chooce 4.png" alt="user" class="choce-4">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5 col-md-12" style="align-self: center;">
+                    <p class="chooce-lotus-blue-text">reasons to Choose Us</p>
+                    <h1 class="chooce-lotus-title">Choose connect immigrate, Your Path to Success</h1>
+                    <p class="chooce-lotus-text mt-3"><img src="images/check-circle.png" alt="user"
+                            class="mr-2">Expertise that Delivers
+                    </p>
+                    <p class="chooce-lotus-text"><img src="images/check-circle.png" alt="user"
+                            class="mr-2">Comprehensive Solutions,
+                        Simplified</p>
+                    <p class="chooce-lotus-text"><img src="images/check-circle.png" alt="user" class="mr-2">Personalized
+                        Approach,
+                        Tailored Results</p>
+                    <p class="chooce-lotus-text"><img src="images/check-circle.png" alt="user" class="mr-2">Global
+                        Reach, Diverse
+                        Talent
+                    </p>
+                    <button class="btn chooce-lotus-button mt-4" type="button">Let’s Talk</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- creative person div start from here-->
+    <div class="creative-person">
+        <div class="container">
+            <div>
+                <p class="creative-person-team">teams</p>
+                <h1 class="creative-person-title">Creative person behind
+                    <span class="creative-person-title-inner">connect immigrate</span>
+                </h1>
+                <p class="creative-person-text mt-3">Our team at connect immigrate is a dedicated group of professionals with
+                    a
+                    passion for connecting employers with top talent and navigating the complexities of immigration.
+                    With
+                    diverse expertise and a commitment to excellence, we are here to support your staffing and
+                    immigration
+                    needs, ensuring your success in a competitive market.</p>
+            </div>
+            <div class="row mt-4" style="justify-content: space-around;">
+                <div class="card mt-4" style="width:345px">
+                    <img src="images/Person (1).png" alt="user" class="card-image">
+                    <div class="card-body">
+                        <h4 class="card-title">Paul Lopez</h4>
+                        <p class="card-text">CEO & FOUNDER</p>
+                        <div class="card-links">
+                            <a href="#"><img src="images/sosial.png" alt="user"></a>
+                        </div>
+                        <span class="card-line"></span>
+                    </div>
+                </div>
+                <div class="card mt-4" style="width:345px">
+                    <img src="images/Person (2).png" alt="user" class="card-image">
+                    <div class="card-body">
+                        <h4 class="card-title">Sarah Johnson</h4>
+                        <p class="card-text">Staffing Specialist</p>
+                        <div class="card-links">
+                            <a href="#"><img src="images/sosial.png" alt="user"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mt-4" style="width:345px">
+                    <img src="images/Person (3).png" alt="user" class="card-image">
+                    <div class="card-body">
+                        <h4 class="card-title">Michael Patel</h4>
+                        <p class="card-text">Immigration Consultant</p>
+                        <div class="card-links">
+                            <a href="#"><img src="images/sosial.png" alt="user"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mt-4" style="width:345px">
+                    <img src="images/Person (4).png" alt="user" class="card-image">
+                    <div class="card-body">
+                        <h4 class="card-title">Jennifer Lee</h4>
+                        <p class="card-text">Recruitment Manager</p>
+                        <div class="card-links">
+                            <a href="#"><img src="images/sosial.png" alt="user"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mt-4" style="width:345px">
+                    <img src="images/Person (5).png" alt="user" class="card-image">
+                    <div class="card-body">
+                        <h4 class="card-title">Jeniffer Tan</h4>
+                        <p class="card-text">Compliance Officer</p>
+                        <div class="card-links">
+                            <a href="#"><img src="images/sosial.png" alt="user"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mt-4" style="width:345px">
+                    <img src="images/Person (6).png" alt="user" class="card-image">
+                    <div class="card-body">
+                        <h4 class="card-title">John Carter</h4>
+                        <p class="card-text">Client Relations Specialist</p>
+                        <div class="card-links">
+                            <a href="#"><img src="images/sosial.png" alt="user"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- textimonial start from here -->
+    <div class="testimonial">
+        <div class="swiper mySwiper container">
+            <div class="swiper-next"><img src="images/Arrow 2.png" alt=""></div>
+            <div class="swiper-prev"><img src="images/Arrow 2.png" alt=""></div>
+            <div class="">
+                <div>
+                    <p class="testimonial-text">testimonials</p>
+                    <h1 class="testimonial-title">What our customer says ?</h1>
+                </div>
+            </div>
+
+            <div class="swiper-wrapper">
+                <div class="swiper-slide testimonial-card">
+                    <div class="stars">
+                        <i class="fa fa-star fa-lg"></i>
+                        <i class="fa fa-star fa-lg"></i>
+                        <i class="fa fa-star fa-lg"></i>
+                        <i class="fa fa-star fa-lg"></i>
+                        <i class="fa fa-star fa-lg"></i>
+                    </div>
+                    <p class="text mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor
+                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                        exercitation
+                        ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in </p>
+                    <div class="media mt-4">
+                        <img src="images/Testimonial pic 1.png" alt="user" class="mr-3" style="width:52px;">
+                        <div class="media-body">
+                            <h4 class="media-title mt-1">Jimm Belgin</h4>
+                            <p class="media-text">founder of rumah kita</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide testimonial-card">
+                    <div class="stars">
+                        <i class="fa fa-star fa-lg"></i>
+                        <i class="fa fa-star fa-lg"></i>
+                        <i class="fa fa-star fa-lg"></i>
+                        <i class="fa fa-star fa-lg"></i>
+                        <i class="fa fa-star fa-lg"></i>
+                    </div>
+                    <p class="text mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor
+                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                        exercitation
+                        ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in </p>
+                    <div class="media mt-4">
+                        <img src="images/Testimonial 3.png" alt="user" class="mr-3" style="width:52px;">
+                        <div class="media-body">
+                            <h4 class="media-title mt-1">Jimm Belgin</h4>
+                            <p class="media-text">founder of rumah kita</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide testimonial-card">
+                    <div class="stars">
+                        <i class="fa fa-star fa-lg"></i>
+                        <i class="fa fa-star fa-lg"></i>
+                        <i class="fa fa-star fa-lg"></i>
+                        <i class="fa fa-star fa-lg"></i>
+                        <i class="fa fa-star fa-lg"></i>
+                    </div>
+                    <p class="text mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor
+                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                        exercitation
+                        ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in </p>
+                    <div class="media mt-4">
+                        <img src="images/Testimonial 2.png" alt="user" class="mr-3" style="width:52px;">
+                        <div class="media-body">
+                            <h4 class="media-title mt-1">Jimm Belgin</h4>
+                            <p class="media-text">founder of rumah kita</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- interested div start from here -->
+    <div class="interested">
+        <div class="container">
+            <img src="images/Vector 17 ylw.png" alt="user"
+                style="position: absolute; margin-left: -35px; margin-top: -25px; z-index: 999999;">
+            <img src="images/interested dots.png" alt="user" class="d-none d-xl-flex"
+                style="margin-left: 953px; margin-top: 117px; position: absolute;filter: brightness(1.5);">
+            <div class="row interested-inner">
+                <div class="col-md-6">
+                    <h1 class="interested-inner-title">Interested to collaborate ?</h1>
+                    <p class="interested-inner-text">Unlock the power of collaboration with connect immigrate, where ideas
+                        converge, and possibilities expand.</p>
+                </div>
+                <div class="col-md-6">
+                    <button class="btn interested-inner-button" type="button">Let’s Talk</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer start from here -->
+    <footer class="page-footer blue">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-8 col-sm-8">
+                    <img src="images/Logo.png" alt="user" style="width: 120px;">
+                    <p class="footer-text">Your trusted partner for staffing solutions and immigration services - Connect Immigrate is committed to delivering excellence and driving success for businesses and individuals
+                        alike.</p>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-4">
+                    <h4 class="footer-title">Menu</h4>
+                    <a class="footer-links mt-4">Home</a>
+                    <a class="footer-links">Staffing Solutions</a>
+                    <a class="footer-links">Immigration Services </a>
+                    <a class="footer-links">Blogs</a>
+                    <a class="footer-links">About Us</a>
+                    <a class="footer-links">Contact Us</a>
+                </div>
+                <div class="col-lg-3 col-md-8 col-sm-8">
+                    <h4 class="footer-title">Services</h4>
+                    <a class="footer-links mt-4">000 0000 0000</a>
+                    <a class="footer-links">info@mail.com</a>
+                    <a class="footer-links">City, Postal Code, State,</a>
+                    <a class="footer-links">Country</a>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-4">
+                    <h4 class="footer-title">Follow Us</h4>
+                    <a class="footer-links mt-4">Facebook</a>
+                    <a class="footer-links">Instagram</a>
+                    <a class="footer-links">Twitter</a>
+                    <a class="footer-links">YouTube</a>
+                    <a class="footer-links">Linkedin</a>
+                </div>
+            </div>
+            <hr class="mt-4">
+            <!-- Copyright -->
+            <div class="footer-copyright text-center py-3" style="font-family: 'Open Sans';color: #ffffffcb;">
+                © Copyright connect immigrate 2023, All right reserved.</div>
+        </div>
+    </footer>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+         var swiper = new Swiper(".mySwiper", {
+      slidesPerView: "auto",
+      spaceBetween: 30,
+      navigation: {
+                nextEl: ".swiper-next",
+                prevEl: ".swiper-prev",
+            },
+    //   pagination: {
+    //     el: ".swiper-pagination",
+    //     clickable: true,
+    //   },
+    });
+        // var swiper = new Swiper(".mySwiper", {
+        //     cssMode: true,
+        //     navigation: {
+        //         nextEl: ".swiper-next",
+        //         prevEl: ".swiper-prev",
+        //     },
+        //     mousewheel: true,
+        //     keyboard: true,
+        // });
+    </script>
+    <!-- botstrap cdn -->
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -10,8 +10,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
-    <link rel="stylesheet" href="blog.css">
-
     <title>Log in</title>
     <style>
         .login .login-frame1 {
@@ -22,7 +20,7 @@
         }
 
         .login .form-title {
-            color: #043133;
+            color: #FFF;
             text-align: center;
             font-size: 45px;
             font-family: 'Open Sans';
@@ -31,7 +29,7 @@
         }
 
         .login .label-style {
-            color: #4D5959 !important;
+            color: #FFF !important;
             font-size: 18px;
             font-family: 'Open Sans';
             font-weight: 500;
@@ -41,8 +39,8 @@
 
         .login .form-control {
             border-radius: 8px;
-            border: 1px solid #F8F8F8;
-            background: #F9F9F9;
+            border: 1px solid var(--white, #FFF);
+            background: rgba(249, 249, 249, 0.10);
             padding: 10px;
         }
 
@@ -54,7 +52,7 @@
         }
 
         .login .login-form .form-control::placeholder {
-            color: #838383 !important;
+            color: #ffffffbd !important;
             font-size: 15px;
             font-family: 'Open Sans';
             line-height: 34px;
@@ -63,14 +61,13 @@
 
         .login .login-form .login-button {
             border-radius: 4px;
-            background: var(--iris-60, #A5A6F6);
+            background: #FFF !important;
             box-shadow: 0px 16px 30px 0px rgba(85, 15, 15, 0.04);
             font-family: 'Open Sans';
             font-style: normal;
             font-weight: 600;
             font-size: 16px;
             line-height: 34px;
-            color: #FFFFFF;
             width: 180px;
             height: 50px;
             margin: 0 auto;
@@ -78,8 +75,14 @@
             margin-top: 30px;
         }
 
+        .login .login-form .login-button:hover{
+            background-color: transparent !important;
+            color: #FFF;
+            border: 1px solid #FFF;
+        }
+
         .login .account {
-            color: #4D5959;
+            color: #FFF;
             font-size: 15px;
             font-family: 'Open Sans';
             text-align: center;
@@ -87,8 +90,8 @@
         }
 
         .login .or {
-            color: #043133;
-            font-size: 20px;
+            color: #FFF;
+            font-size: 18px;
             font-family: 'Open Sans';
             font-weight: 500;
             text-align: center;
@@ -99,12 +102,13 @@
         }
 
         .login-social-btn {
-            color: #043133;
+            color: #FFF;
             font-size: 15px;
             font-family: 'Poppins';
             font-weight: 500;
             border-radius: 8px;
-            border: 1.4px solid #D2D2D2;
+            border: 1px solid var(--white, #FFF);
+            background: rgba(249, 249, 249, 0.10);
             padding: 4px;
             max-width: 260px;
             margin-top: 20px;
@@ -139,8 +143,8 @@
             <div class="col-lg-4 col-md-12 login-frame1">
                 <img src="images/Logo.png" alt="user" style="margin: 0 auto; display: block; margin-top: 130px;">
             </div>
-            <div class="col-lg-8 col-md-12">
-                <h1 class="form-title">Welcome to Lotus Hiring</h1>
+            <div class="col-lg-8 col-md-12" style="background-color: #887cd9;">
+                <h1 class="form-title">Welcome to connect immigrate</h1>
                 <form class="login-form">
                     <label class="label-style">Email</label>
                     <input type="text" class="form-control" placeholder="Enter your Email here">
@@ -148,7 +152,7 @@
                     <input type="password" class="form-control" placeholder="Password here">
                     <button class="btn login-button" type="button" id="login">Log in</button>
                 </form>
-                <p class="account">Don’t have an account? <span style="color: #5D5FEF;">Sign up</span></p>
+                <p class="account">Don’t have an account? <a href="sign-up.html" style="color: #5D5FEF;text-decoration: underline;font-weight: 600;">Sign up</a></p>
                 <p class="or">OR</p>
                 <div class="login-social">
                     <button class="login-social-btn mr-2" type="button" style="padding-right: 52px;"><img
@@ -165,7 +169,7 @@
     <script>
         let login = document.getElementById("login");
         login.onclick =  function(){
-            window.open('file:///C:/Users/Ameer%20Hamza/Desktop/Lotus%20web/Home.html');
+            window.open('file:///C:/Users/Ameer%20Hamza/Desktop/UnifySoft/Lotus%20web/index.html');
         }
     </script>
     <!-- botstrap cdn -->
